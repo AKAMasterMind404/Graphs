@@ -51,11 +51,11 @@ class Graph:
     def getChildren(self, node):
         matrix = self.graph[self.nodes[node]]
         # print(matrix)
-        ans = []
+        answer = []
         # print(list(self.nodes.keys()))
         for i in range(len(matrix)):
-            if matrix[i]: ans.append(list(self.nodes.keys())[i])
-        return ans
+            if matrix[i]: answer.append(list(self.nodes.keys())[i])
+        return answer
 
     def unVisited(self, node, visited):
         for i in self.getChildren(node):
